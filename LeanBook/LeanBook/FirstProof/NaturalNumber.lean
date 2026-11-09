@@ -37,3 +37,6 @@ set_option pp.fieldNotation.generalized false in
 --   rfl
 example : MyNat.one.add .one = .two := by
   rfl
+
+example (n : MyNat) : MyNat.add n .zero = n := by
+  rfl
